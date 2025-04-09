@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Dawit Tamiru</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- Navigation -->
+      <nav class="left-nav">
+        <a href="#hero" class="nav-item active" onclick="navClick('hero')">
+          <svg
+            class="nav-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+            />
+          </svg>
+          <span>Home</span>
+        </a>
+        <a href="#about" class="nav-item" onclick="navClick('about')">
+          <svg
+            class="nav-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+            />
+          </svg>
+          <span>About</span>
+        </a>
+        <a href="#projects" class="nav-item" onclick="navClick('project')">
+          <svg
+            class="nav-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+            />
+          </svg>
+          <span>Projects</span>
+        </a>
+        <a href="#contact" class="nav-item" onclick="navClick('contact')">
+          <svg
+            class="nav-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+            />
+          </svg>
+          <span>Contact</span>
+        </a>
+      </nav>
+
+      <!-- Main Content -->
+      <div class="right-content">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+          <div class="text-side">
+            <h1 class="hero-title">Hello, I am</h1>
+            <h1 id="name">Dawit Tamiru</h1>
+            <h3 id="title-occupation">Front end Web Developer</h3>
+          </div>
+          <div
+            class="avatar"
+            style="
+              background-image: url('assets/image-2.jpg');
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center;
+            "
+          ></div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+          <div class="section-header">
+            <!-- <span class="section-number">01</span> -->
+            <h2 class="section-title">About Dawit</h2>
+          </div>
+          <div class="section-divider"></div>
+          <div class="about-content">
+            <div class="about-text">
+              <p>
+                I’ve spent over five years working across tech roles—from
+                frontend development and software configuration to IT support
+                and system administration. I’ve built web apps, led software
+                projects, and developed a game show system aired on national TV.
+                My work at companies like BlockCertsAI and Lisa Production has
+                sharpened my leadership, problem-solving, and creative thinking.
+                Recently, I’ve also explored video editing and content creation,
+                keeping my skills both sharp and diverse.
+              </p>
+              <br />
+              <p>
+                I earned my Bachelor of Science in Electrical and Computer
+                Engineering from Addis Ababa Institute of Technology, Addis
+                Ababa University in 2016. Since then, I’ve kept learning through
+                certifications in computer maintenance, networking, Front-end
+                and Mobile app development(Flutter). I'm currently expanding my
+                frontend skills with a React web bootcamp on Udemy. I am also
+                persuing my MSc in Computer Science hoping to solidify my
+                knowledge on the field.
+              </p>
+              <a
+                href="https://1drv.ms/b/c/af15753579054321/EfD_giNQo1VMg5atENovlL8BUetfQ1ESoq0q12XHlrR5tQ?e=4ALhMh"
+                class="download-btn"
+                target="_blank"
+                onclick="downloadResume()"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"
+                  />
+                  <path
+                    d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"
+                  />
+                </svg>
+                Download Resume
+              </a>
+            </div>
+            <div class="skills-container">
+              <div class="skill-item">
+                <h4>HTML</h4>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h4>CSS</h4>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h4>Js</h4>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h4>Java</h4>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h4>UI/UX Design</h4>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 75%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h4>ReactJs</h4>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 70%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h4>NodeJs</h4>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 70%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <h4>Arduino + C++</h4>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 70%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+          <div class="section-header">
+            <h2 class="section-title">Projects</h2>
+          </div>
+          <div class="section-divider"></div>
+
+          <h3 style="margin-bottom: 1.5rem">Work Projects</h3>
+          <div class="projects-grid">
+            <a
+              href="https://www.youtube.com/watch?v=AligykI4E4A&list=PLkZ6QcbNoWfj_m7UwrCsfb_Cd1QQM_8YN"
+              target="_blank"
+              class="project-card"
+            >
+              <div
+                class="project-image"
+                style="
+                  background-image: url('assets/leyu.png');
+                  background-size: cover;
+                  background-position: center;
+                "
+              ></div>
+              <div class="project-info">
+                <h3 class="project-title">Leyu Tune</h3>
+                <p class="project-description">
+                  As the creator and administrator of a dynamic game show aired on Fana TV and YouTube, I led a team of three to deliver an engaging, interactive experience with strong audience participation over two years. I designed and developed the backend system to manage game logic, built a custom controller for player inputs, and implemented a database management system to streamline gameplay setup and execution. The show combined live TV energy with digital accessibility, offering a seamless blend of entertainment and technology.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">NodeJs</span>
+                  <span class="tag">HTML/CSS</span>
+                  <span class="tag">Computer Maintenance / Installation</span>
+                  <span class="tag">Admin System</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <h3 style="margin: 3rem 0 1.5rem">Miscellaneous</h3>
+          <div class="projects-grid">
+            <a
+              href="https://tevboyz.github.io/PMF-Calculator/"
+              target="_blank"
+              class="project-card"
+            >
+              <div
+                class="project-image"
+                style="
+                  background-image: url('assets/pmf\ calculator.jpg');
+                  background-size: cover;
+                  background-position: center;
+                "
+              ></div>
+              <div class="project-info">
+                <h3 class="project-title">
+                  PMF-Calculator for Medical Services
+                </h3>
+                <p class="project-description">
+                  An app, Pediatric Maintenance Fluid Calculator, calculated the
+                  fluid requirements for pediatric patients(children), which is
+                  crucial for managing hydration, especially in clinical or
+                  hospital settings.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">HTML / CSS</span>
+                  <span class="tag">Web App</span>
+                </div>
+              </div>
+            </a>
+            <a
+              href="https://tevboyz.github.io/todo/"
+              target="_blank"
+              class="project-card"
+            >
+              <div
+                class="project-image"
+                style="
+                  background-image: url('assets/todo.png');
+                  background-size: cover;
+                  background-position: center;
+                "
+              ></div>
+              <div class="project-info">
+                <h3 class="project-title">To-Do List</h3>
+                <p class="project-description">
+                  A React-based task management application with DOM
+                  manipulation, created during my React learning journey.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">React</span>
+                  <span class="tag">Productivity</span>
+                </div>
+              </div>
+            </a>
+            <a
+              href="https://tevboyz.github.io/Calculator/"
+              target="_blank"
+              class="project-card"
+            >
+              <div
+                class="project-image"
+                style="
+                  background-image: url('assets/calculator.jpg');
+                  background-size: cover;
+                  background-position: center;
+                "
+              ></div>
+              <div class="project-info">
+                <h3 class="project-title">Calculator</h3>
+                <p class="project-description">
+                  A basic Calculator app, that showcases DOM management and
+                  simple logical manipulation.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">HTML/CSS</span>
+                  <span class="tag">Vanilla</span>
+                </div>
+              </div>
+            </a>
+            <a
+            href="https://battles4u.github.io/Clock/"
+            target="_blank"
+            class="project-card"
+          >
+            <div
+              class="project-image"
+              style="
+                background-image: url('assets/clock.jpg');
+                background-size: cover;
+                background-position: center;
+              "
+            ></div>
+            <div class="project-info">
+              <h3 class="project-title">Clock</h3>
+              <p class="project-description">
+                A basic working clock to show off DOM manipulation.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML/CSS</span>
+                <span class="tag">Js</span>
+                <span class="tag">Vanilla</span>
+              </div>
+            </div>
+          </a>
+          </div>
+
+          <h3 style="margin: 3rem 0 1.5rem">Simple Vanilla Games</h3>
+          <div class="projects-grid">
+            <a
+              href="https://tevboyz.github.io/Hangmann/"
+              target="_blank"
+              class="project-card"
+            >
+              <div
+                class="project-image"
+                style="
+                  background-image: url('assets/hangmann.png');
+                  background-size: cover;
+                  background-position: center;
+                "
+              ></div>
+              <div class="project-info">
+                <h3 class="project-title">Hangman Game</h3>
+                <p class="project-description">
+                  Classic hangman with API-generated words, my first project
+                  integrating with an external API.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Game</span>
+                  <span class="tag">HTML / CSS</span>
+                  <span class="tag">JS</span>
+                  <span class="tag">JSON</span>
+                  <span class="tag">API Integration</span>
+                </div>
+              </div>
+            </a>
+            <a
+              href="https://tevboyz.github.io/cryptoG/"
+              target="_blank"
+              class="project-card"
+            >
+              <div
+                class="project-image"
+                style="
+                  background-image: url('assets/cryptogram.jpg');
+                  background-size: cover;
+                  background-position: center;
+                "
+              ></div>
+              <div class="project-info">
+                <h3 class="project-title">Cryptogram</h3>
+                <p class="project-description">
+                  Decipher a hidden message by cracking a letter-substitution cipher! Each letter in the encoded text is replaced by another (e.g., A → D, B → X). Your task is to decode the original words using logic, pattern recognition, and language clues.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Game</span>
+                  <span class="tag">HTML / CSS</span>
+                  <span class="tag">JS</span>
+                  <span class="tag">JSON</span>
+                  <span class="tag">API Integration</span>
+                </div>
+              </div>
+            </a>
+            <a
+              href="https://tevboyz.github.io/Numbers/"
+              target="_blank"
+              class="project-card"
+            >
+              <div
+                class="project-image"
+                style="
+                  background-image: url('assets/numbers.png');
+                  background-size: cover;
+                  background-position: center;
+                "
+              ></div>
+              <div class="project-info">
+                <h3 class="project-title">Numbers (4 Digit)</h3>
+                <p class="project-description">
+                  A logic puzzle game where players deduce a hidden 4-digit
+                  number through strategic guessing.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Puzzle</span>
+                  <span class="tag">Logic</span>
+                </div>
+              </div>
+            </a>
+            <a
+              href="https://tevboyz.github.io/tic-tac-toe/"
+              target="_blank"
+              class="project-card"
+            >
+              <div
+                class="project-image"
+                style="
+                  background-image: url('assets/match\ the\ bottles.jpg');
+                  background-size: cover;
+                  background-position: center;
+                "
+              ></div>
+              <div class="project-info">
+                <h3 class="project-title">Match the bottles</h3>
+                <p class="project-description">
+                  Match the bottles on the top with the bottles behind the
+                  curtain. The game tracks the the number of matched bottles so
+                  that you can deduce the correct positions of all the bottles.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">HTML/CSS</span>
+                  <span class="tag">Js</span>
+                  <span class="tag">Game</span>
+                </div>
+              </div>
+            </a>
+            <a
+              href="https://tevboyz.github.io/find-the-difference/"
+              target="_blank"
+              class="project-card"
+            >
+              <div
+                class="project-image"
+                style="
+                  background-image: url('assets/different\ box.jpg');
+                  background-size: cover;
+                  background-position: center;
+                "
+              ></div>
+              <div class="project-info">
+                <h3 class="project-title">Find the different box</h3>
+                <p class="project-description">
+                  Identify the different box from the boxes on the screen. the
+                  hue of the box gets more and more difficult as you go up a
+                  level.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">HTML/CSS</span>
+                  <span class="tag">Js</span>
+                  <span class="tag">Hue Colors</span>
+                  <span class="tag">Game</span>
+                </div>
+              </div>
+            </a>
+            <a
+              href="https://tevboyz.github.io/Word-Chain/"
+              target="_blank"
+              class="project-card"
+            >
+              <div
+                class="project-image"
+                style="
+                  background-image: url('assets/word\ chain.jpg');
+                  background-size: cover;
+                  background-position: center;
+                "
+              ></div>
+              <div class="project-info">
+                <h3 class="project-title">Word Chain</h3>
+                <p class="project-description">
+                  Find the next word in the chain. If you miss, the next letter in that word will be revealed.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">HTML/CSS</span>
+                  <span class="tag">Js</span>
+                  <span class="tag">API Integration</span>
+                  <span class="tag">Word Game</span>
+                </div>
+              </div>
+            </a>
+            <a
+              href="https://tevboyz.github.io/GTN-0-99/"
+              target="_blank"
+              class="project-card"
+            >
+              <div
+                class="project-image"
+                style="
+                  background-image: url('assets/GTN\ 0-99.jpg');
+                  background-size: cover;
+                  background-position: center;
+                "
+              ></div>
+              <div class="project-info">
+                <h3 class="project-title">Guess the Number (0 - 99)/h3>
+                <p class="project-description">
+                  Find the number from 0 to 99. On the every guess the game will tell u higher or lower.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">HTML/CSS</span>
+                  <span class="tag">Js</span>
+                  <span class="tag">Logic</span>
+                  <span class="tag">Word Game</span>
+                </div>
+              </div>
+            </a>
+            <a
+              href="https://tevboyz.github.io/tic-tac-toe/"
+              target="_blank"
+              class="project-card"
+            >
+              <div
+                class="project-image"
+                style="
+                  background-image: url('assets/tictacto.png');
+                  background-size: cover;
+                  background-position: center;
+                "
+              ></div>
+              <div class="project-info">
+                <h3 class="project-title">Tic-Tac-Toe</h3>
+                <p class="project-description">
+                  A very simple, non intellegent, tic tac toe game, created to
+                  learn simple DOM manipulation.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Game</span>
+                  <span class="tag">AI</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+          <div class="section-header">
+            <h2 class="section-title">Get In Touch</h2>
+          </div>
+          <div class="section-divider"></div>
+          <p class="contact-text">
+            I'm available for freelance work and new opportunities.
+            Whether you have a project in mind or just want to say hello, feel
+            free to reach out!
+          </p>
+          <div class="contact-links">
+            <a href="mailto:dawit.ttamiru@gmail.com" class="contact-link" target="_blank">
+              <svg
+                class="contact-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
+              </svg>
+              <span>Email Me</span>
+            </a>
+            <a
+              href="https://linkedin.com/in/dawit-tefera-tamiru-6b9496136"
+              target="_blank"
+              class="contact-link"
+            >
+              <svg
+                class="contact-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                />
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+            <a
+              href="https://github.com/tevBoyz"
+              target="_blank"
+              class="contact-link"
+            >
+              <svg
+                class="contact-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                />
+              </svg>
+              <span>GitHub</span>
+            </a>
+            <a
+              href="https://www.youtube.com/@battles4u"
+              target="_blank"
+              class="contact-link"
+            >
+              <svg
+                class="contact-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
+                />
+              </svg>
+              <span>YouTube</span>
+            </a>
+          </div>
+        </section>
+
+        <footer class="footer">
+          <p>© 2025 Dawit Tefera. All rights reserved.</p>
+        </footer>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
