@@ -1,5 +1,5 @@
 const resume_link =
-        "https://1drv.ms/b/c/af15753579054321/EfD_giNQo1VMg5atENovlL8BUetfQ1ESoq0q12XHlrR5tQ?e=4ALhMh";
+        "https://1drv.ms/b/c/af15753579054321/EWsD7QYKOfdAj4Kq1OkGWskBxovzjhZ3_i4YriQzQ9Ss3Q?e=6nh9vb";
 
       function downloadResume() {
         window.open(resume_link, "_blank");
