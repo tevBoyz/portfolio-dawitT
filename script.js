@@ -18,7 +18,7 @@ const resume_link =
 
       // Highlight nav item based on scroll position
       window.addEventListener("scroll", () => {
-        const sections = ["hero", "about", "projects", "contact"];
+        const sections = ["hero", "about", "skills", "projects", "contact"];
         const scrollPosition = window.scrollY + 100;
 
         sections.forEach((section) => {
@@ -36,3 +36,29 @@ const resume_link =
           }
         });
       });
+
+
+
+      function openBcertsModal() {
+        document.getElementById("blockcertsModal").style.display = "block";
+      }
+    
+      function closeBcertsModal() {
+        document.getElementById("blockcertsModal").style.display = "none";
+      }
+
+      function openLeyuModal() {
+        document.getElementById("leyuTuneModal").style.display = "block";
+      }
+    
+      function closeLeyuModal() {
+        document.getElementById("leyuTuneModal").style.display = "none";
+      }
+    
+      window.onclick = function(event) {
+        const modal = document.getElementById("blockcertsModal");
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      }
+    

@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Dawit Tamiru</title>
+    <title>Dawit Tamiru - Portfolio</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="assets/code.png" />
   </head>
   <body>
     <div class="main-container">
@@ -65,6 +66,18 @@
           </svg>
           <span>Projects</span>
         </a>
+        <a href="#skills" class="nav-item" onclick="navClick('skills')">
+          <svg 
+          class="nav-icon"
+          xmlns="http://www.w3.org/2000/svg" 
+          fill="currentColor"
+          stroke="currentColor"
+          viewBox="0 0 512 600">
+          <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+          />
+        </svg>
+          <span>Skills</span>
+        </a>
         <a href="#contact" class="nav-item" onclick="navClick('contact')">
           <svg
             class="nav-icon"
@@ -107,10 +120,8 @@
         <!-- About Section -->
         <section id="about" class="section">
           <div class="section-header">
-            <!-- <span class="section-number">01</span> -->
-            <h2 class="section-title">About Dawit</h2>
+            <h2 class="section-title">About Me</h2>
           </div>
-          <div class="section-divider"></div>
           <div class="about-content">
             <div class="about-text">
               <p>
@@ -157,56 +168,6 @@
                 Download Resume
               </a>
             </div>
-            <div class="skills-container">
-              <div class="skill-item">
-                <h4>HTML</h4>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 90%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <h4>CSS</h4>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 90%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <h4>Js</h4>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 90%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <h4>Java</h4>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 90%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <h4>UI/UX Design</h4>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 75%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <h4>ReactJs</h4>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 70%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <h4>NodeJs</h4>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 70%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <h4>Arduino + C++</h4>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 70%"></div>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
@@ -217,11 +178,42 @@
           </div>
           <div class="section-divider"></div>
 
-          <h3 style="margin-bottom: 1.5rem">Work Projects</h3>
+          <h3 style="margin-bottom: 1.5rem">Featured Work Projects</h3>
           <div class="projects-grid">
             <a
-              href="https://www.youtube.com/watch?v=AligykI4E4A&list=PLkZ6QcbNoWfj_m7UwrCsfb_Cd1QQM_8YN"
-              target="_blank"
+            onclick="openBcertsModal()"
+              class="project-card"
+            >
+              <div
+                class="project-image"
+                style="
+                  background-image: url('assets/blockcerts\ icon.png');
+                  background-size: cover;
+                  background-position: center;
+                "
+              ></div>
+              <div class="project-info">
+                <h3 class="project-title">BlockCertsAI</h3>
+                <p class="project-description">
+                  As a member of BlockCertsAI’s Delivery Team, I contributed to the development, testing, and deployment of decentralized applications (dApps) that integrate blockchain technology. I worked across the stack to deliver responsive interfaces, ensure quality assurance, and support end-users.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">ASP.Net / C#</span>
+                  <span class="tag">HTML/CSS/Js</span>
+                  <span class="tag">Git</span>
+                  <span class="tag">XML</span>
+                  <span class="tag">Figma</span>
+                  <span class="tag">Team Work</span>
+                  <span class="tag">Documentation</span>
+                  <span class="tag">Configuration</span>
+                  <span class="tag">Quality Assurance</span>
+                  
+                </div>
+              </div>
+            </a>
+            
+            <a
+            onclick="openLeyuModal()"
               class="project-card"
             >
               <div
@@ -235,11 +227,11 @@
               <div class="project-info">
                 <h3 class="project-title">Leyu Tune</h3>
                 <p class="project-description">
-                  As the creator and administrator of a dynamic game show aired on Fana TV and YouTube, I led a team of three to deliver an engaging, interactive experience with strong audience participation over two years. I designed and developed the backend system to manage game logic, built a custom controller for player inputs, and implemented a database management system to streamline gameplay setup and execution. The show combined live TV energy with digital accessibility, offering a seamless blend of entertainment and technology.
+                  I created and led a game show aired on Fana TV and YouTube, managing a team of three for two years. I built the backend system, custom player input controller, and database for smooth gameplay. The show blended live TV energy with digital interactivity, delivering a seamless, tech-driven experience that engaged both studio and online audiences.
                 </p>
                 <div class="project-tags">
                   <span class="tag">NodeJs</span>
-                  <span class="tag">HTML/CSS</span>
+                  <span class="tag">HTML/CSS/Js</span>
                   <span class="tag">Computer Maintenance / Installation</span>
                   <span class="tag">Admin System</span>
                 </div>
@@ -572,6 +564,82 @@
           </div>
         </section>
 
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+          <div class="section-header sp">
+            <h2 class="section-title">Skills</h2>
+          </div>
+          <div class="section-divider"></div>
+      
+          <!-- Technical Skills -->
+          <h3 class="section-subtitle">Technical Skills</h3>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Skill</th>
+                  <th>Rating</th>
+                  <th>Level</th>
+                  <th>Justification</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td><i class="devicon-html5-plain colored"></i> HTML/CSS</td><td>90%</td><td><div class="bar"><div class="bar-fill" style="width:90%"></div></div></td><td>Core UI work, responsive design, and styling frameworks like Tailwind/Bootstrap. @All Companies</td></tr>
+                <tr><td><i class="devicon-javascript-plain colored"></i> JavaScript</td><td>85%</td><td><div class="bar"><div class="bar-fill" style="width:85%"></div></div></td><td>Used across multiple projects for functionality and interactivity. @All Companies</td></tr>
+                <tr><td><i class="devicon-dot-net-plain colored"></i> ASP.Net / C#</td><td>80%</td><td><div class="bar"><div class="bar-fill" style="width:65%"></div></div></td><td>Integrated gadgets and features into .NET platform projects. @BlockCertsAI</td></tr>
+                <tr><td><i class="devicon-mysql-plain colored"></i> MySQL</td><td>75%</td><td><div class="bar"><div class="bar-fill" style="width:75%"></div></div></td><td>Handled data registration, linking interfaces to server-side logic. @ LeyuTune</td></tr>
+                <tr><td><i class="devicon-xml-plain colored"></i> XML</td><td>80%</td><td><div class="bar"><div class="bar-fill" style="width:80%"></div></div></td><td>Used for UI customization, permissions, and role-based rendering. @BlockCertsAI</td></tr>
+                <tr><td><i class="devicon-nodejs-plain colored"></i> Node.js</td><td>65%</td><td><div class="bar"><div class="bar-fill" style="width:65%"></div></div></td><td>Familiar with server-side logic, API creation. @LeyuTune</td></tr>
+                <tr><td><i class="devicon-git-plain colored"></i> Git / GitLab</td><td>85%</td><td><div class="bar"><div class="bar-fill" style="width:85%"></div></div></td><td>Used in all projects for version control and team collaboration. @All Companies</td></tr>
+                <tr><td><i class="devicon-chrome-plain colored"></i> Chrome DevTools</td><td>80%</td><td><div class="bar"><div class="bar-fill" style="width:80%"></div></div></td><td>Regular use for debugging and live-editing frontend code. @All Companies</td></tr>
+                <tr><td><i class="devicon-react-original colored"></i> React.js</td><td>70%</td><td><div class="bar"><div class="bar-fill" style="width:60%"></div></div></td><td>Learning React in Udemy course.</td></tr>
+                <tr><td>System Admin & Networking</td><td>85%</td><td><div class="bar"><div class="bar-fill" style="width:85%"></div></div></td><td>TV Show project setup, OS, network, maintenance. @LeyuTune</td></tr>
+              </tbody>
+            </table>
+          </div>
+      
+          <!-- Soft Skills -->
+          <h3 class="section-subtitle">Soft Skills</h3>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Skill</th>
+                  <th>Rating</th>
+                  <th>Level</th>
+                  <th>Justification</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Team Collaboration</td><td>90%</td><td><div class="bar"><div class="bar-fill" style="width:90%"></div></div></td><td>Led and participated in multiple team projects with diverse roles.</td></tr>
+                <tr><td>Problem Solving</td><td>85%</td><td><div class="bar"><div class="bar-fill" style="width:85%"></div></div></td><td>Involved in debugging, bug-fixing, and optimizing features.</td></tr>
+                <tr><td>Communication</td><td>80%</td><td><div class="bar"><div class="bar-fill" style="width:80%"></div></div></td><td>Clear in collaboration, documentation, and leadership tasks.</td></tr>
+                <tr><td>Adaptability</td><td>90%</td><td><div class="bar"><div class="bar-fill" style="width:90%"></div></div></td><td>Constantly learning new tech, bootcamps, and cross-skilling.</td></tr>
+                <tr><td>Capcut (Video Editing)</td><td>70%</td><td><div class="bar"><div class="bar-fill" style="width:70%"></div></div></td><td>Used to edit content for TikTok, apply effects and transitions.</td></tr>
+              </tbody>
+            </table>
+
+            <!-- Language -->
+          <h3 class="section-subtitle">Languages</h3>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Language</th>
+                  <th>Rating</th>
+                  <th>Level</th>
+                  <th>Fluency</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>English</td><td>80%</td><td><div class="bar"><div class="bar-fill" style="width:80%"></div></div></td><td>Fluent</td></tr>
+                <tr><td>Amharic</td><td>90%</td><td><div class="bar"><div class="bar-fill" style="width:90%"></div></div></td><td>Fluent (Mother Tongue)</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
         <!-- Contact Section -->
         <section id="contact" class="section">
           <div class="section-header">
@@ -667,8 +735,83 @@
           </div>
         </section>
 
+          <!-- BlockCertsAI Modal -->
+<div id="blockcertsModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeBcertsModal()">&times;</span>
+    <h2>🚀 BlockCertsAI – Delivery Team</h2>
+    <p><strong>Role:</strong> Configuration and Front-End Developer</p>
+    <p><strong>Duration:</strong> August 2022 - April 2024</p>
+    <p><strong>Website:</strong> <a href="https://blockcerts.com/" target="_blank">BlockCertsAI</a></p>
+
+    <h3>🧠 Key Contributions</h3>
+    <ul>
+      <li>Assisting Developers with the configuration of account settings and gadget/application organization.</li>
+      <li>Creating and Maintaining cross-device responsiveness and accessibility, of website and applications</li>
+      <li><strong>Configuration:</strong> Setting up new websites/instances based on the company requirements. Creating a new domain and set up a new
+        platform that has multiple gadgets/applications, that are needed for the specific client.</li>
+      <li><strong>Configuration:</strong>Creating new gadgets and features using HTML CSS and JavaScript. Optimizing them using XML, and integrate
+          them with ASP.Net.</li>
+      <li><strong>Configuration:</strong> Managing gadgets/applications and permissions helped me get a hand on experience of XML.</li>
+      <li><strong>QA:</strong> Test cases, debugging, performance tuning.</li>
+      <li><strong>Support:</strong> User guides, issue resolution, feedback loops.</li>
+      <li><strong>Team:</strong> Agile sprints, retros, documentation.</li>
+    </ul>
+
+    <h3>🛠 Tech Stack</h3>
+    <ul>
+      <li><strong>Languages:</strong> HTML5, CSS3, JS, ASP.NET, C#, Bootstrap</li>
+      <li><strong>Design:</strong> Figma</li>
+      <li><strong>Version Control:</strong> Git</li>
+      <li><strong>Testing:</strong> Manual, Automation Testing (Python)</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Leyu Tune Modal -->
+<div id="leyuTuneModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeLeyuModal()">&times;</span>
+    <h2>🚀 leyu Tune Lead Team</h2>
+    <p><strong>Role:</strong> Software Developer and IT Lead</p>
+    <p><strong>Duration:</strong> Jan 2020 - July 2022</p>
+    <p><strong>Website:</strong> <a href="https://www.youtube.com/watch?v=AligykI4E4A&list=PLkZ6QcbNoWfj_m7UwrCsfb_Cd1QQM_8YN" target="_blank">YouTube Link</a></p>
+
+    <h3>🧠 Key Contributions</h3>
+    <ul>
+      <li>Developed a Software program/Game for a game show currently on air on Sundays on Fana TV, with a team that
+        consists of three members. Defined project scope, hardware, software specifications, and other requirements and
+        launched the TV show successfully.</li>
+      <li>Led the purchase and installation of electronic equipment and devices based upon the hardware requirements.
+        Picked the right technology to go with the functionality intended. </li>
+      <li>Installation of computer equipment and devices, networking, OS setup and configuration.</li>
+      <li>Utilized tools such as JavaScript, CSS, HTML, C#. Also adapted to GIT-LAB repository and successfully
+        completed the full software development lifecycle (Analysis, Design, Coding, Testing, Deploying, Maintenance)
+        Electron, CSS, HTML (Bootstrap): used to develop the screens and dashboard and game logic of the program. </li>
+      <li>C# and MySQL: question registration and collection program that runs on the server-side</li>
+      <li>The development of a side program that detects and registers when a buzzer is pressed.</li>
+      <li>Created and linked databases to interfaces, improving the ability to retrieve, store and process information in a
+        more reliable fashion</li>
+      <li>Integration and networking of multiple computers to link multiple users to the main server, and management of multiple screens from a single computer. </li>
+      <li>Worked as a computer system administrator and maintenance officer of the project as a part-time job. This process
+        has helped in the learning of how to keep a system running as efficiently as possible for a prolonged time.
+        </li>
+    </ul>
+
+    <h3>🛠 Tech Stack</h3>
+    <ul>
+      <li><strong>Languages:</strong> HTML5, CSS3, JS, C#, ElectronJs</li>
+      <li><strong>Design:</strong> Figma</li>
+      <li><strong>Version Control:</strong> Git</li>
+      <li><strong>DB</strong>MySQL</li>
+      <li><strong>IT</strong>Computer Integration and System Admin</li>
+    </ul>
+  </div>
+</div>
+
+
         <footer class="footer">
-          <p>© 2025 Dawit Tefera. All rights reserved.</p>
+          <p>© 2025 Dawit Tefera Tamiru. All rights reserved.</p>
         </footer>
       </div>
     </div>
