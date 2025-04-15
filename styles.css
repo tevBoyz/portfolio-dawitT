@@ -235,6 +235,7 @@ body {
   transition: transform 0.3s;
   border: 1px solid var(--border);
   box-shadow: 0 0 15px var(--accent);
+  text-decoration: none;
 }
 
 .project-card:hover {
@@ -264,6 +265,7 @@ body {
   font-size: 0.9rem;
   margin-bottom: 1rem;
   text-align: justify;
+  text-decoration: none;
 }
 
 .project-tags {
