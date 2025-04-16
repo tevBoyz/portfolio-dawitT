@@ -288,6 +288,7 @@ body {
 /* ===== CONTACT SECTION ===== */
 .contact-section {
   text-align: center;
+  height: 20vh;
 }
 
 .contact-text {
@@ -420,6 +421,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-top: 80px;
 }
 
 .section-title {
